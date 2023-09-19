@@ -34,6 +34,11 @@ font-size: 1.5rem;
 border-bottom: 4px solid transparent;
 }
 
+header i.fas{
+    display: none;
+    
+}
+
 header a:hover{
     border-bottom: 4px solid #22FFFE;
 }
@@ -62,6 +67,10 @@ main{
     gap: 16px;
     
 }
+.descricao button{
+    display: none;
+}
+
 
 .descricao p{
     width: 530px;
@@ -106,7 +115,7 @@ footer{
 @media (max-width:768px){
     body{
         padding: 32px 0px 0px 0px;
-        background-image: url(img/background-Tablet.png);
+        background-image: url(./img/background-Tablet.png);
     }
 
     .social-container{
@@ -142,4 +151,64 @@ footer{
     footer{
         display: none;
     }
+}
+
+/* MOBILE */
+@media (max-width:480px){
+    body{
+        background-image: url(./img/background-mobile\ 1\ \(1\).png);
+    }
+    header{
+        justify-content: space-between;
+        padding: 0px 24px 0px 24px;
+        align-items: center;
+        
+    }
+    header.a{
+        border-bottom: none;
+        height: 40px;
+    }
+    header a:not(.logo-DC){
+        display: none;
+    }
+    header i.fas{
+        display: block;
+        color: #d040ff;
+        font-size: 32px;
+
+        
+    }
+    .descricao{
+        padding: 0;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 30px;
+
+    }
+    .descricao button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        width: 200px;
+        height: 50px;
+        background-color: #d040ff;
+        border: 4px solid #22FFFE;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 50px;
+    
+    }
+    .descricao img{
+        width: 95vw;
+    }
+    .descricao p{
+        display: none;
+
+    }
+    .trailers{
+        display: none;
+    }
+
 }
